@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-
+import { Link } from 'react-router'
 import { connect } from 'react-redux'
 
 const mapStateToProps = (state) => ({
@@ -12,14 +12,21 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="App-header">
+        <div  className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+          <h2>Welcome to Wishes-app :)</h2>
+            <p>
+                <Link to="/">Home -test/ </Link>
+                <Link to="/users"> Users -test/ </Link>
+                <Link to="/counter"> Counter -test/ </Link>
+                <Link to="/courses"> Courses -test/ </Link>
+                <Link to="/students"> Students test/ </Link>
+            </p>
         </div>
         <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
+
         </p>
-          <h1>Daniel</h1>
+          
       </div>
     );
   }
