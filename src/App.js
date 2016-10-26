@@ -20,7 +20,7 @@ class App extends Component {
                 <Link to="/users"> Users -test/ </Link>
                 <Link to="/counter"> Counter -test/ </Link>
                 <Link to="/courses"> Courses -test/ </Link>
-                <Link to="/students"> Students -test/ </Link>
+                <Link to="/team"> Team -test/ </Link>
             </p>
         </div>
         <p className="App-intro">
