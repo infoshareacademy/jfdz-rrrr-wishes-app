@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import logo from './images/logo.png';
 import './App.css';
 import { Link } from 'react-router'
 import { connect } from 'react-redux'
@@ -20,7 +20,7 @@ class App extends Component {
                 <Link to="/users"> Users -test/ </Link>
                 <Link to="/counter"> Counter -test/ </Link>
                 <Link to="/courses"> Courses -test/ </Link>
-                <Link to="/students"> Students test/ </Link>
+                <Link to="/students"> Students -test/ </Link>
             </p>
         </div>
         <p className="App-intro">
