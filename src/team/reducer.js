@@ -1,7 +1,4 @@
-/**
- * Created by DanielM on 2016-10-26.
- */
-import {RECEIVE_TEAM, REQUEST_TEAM} from './actionTypes'
+import { RECEIVE_TEAM, REQUEST_TEAM } from './actionTypes'
 
 const initialState = {
     team: [],
@@ -9,9 +6,9 @@ const initialState = {
 }
 
 export default (state = initialState, action) => {
-    switch (action.type){
+    switch (action.type) {
         case REQUEST_TEAM:
-            return Object.assing({}, state, {
+            return Object.assign({}, state, {
                 isLoading: true
             })
         case RECEIVE_TEAM:
