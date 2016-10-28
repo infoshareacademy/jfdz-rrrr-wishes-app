@@ -26,7 +26,7 @@ class App extends Component {
         <p className="App-intro">
 
         </p>
-          
+
       </div>
     );
   }
