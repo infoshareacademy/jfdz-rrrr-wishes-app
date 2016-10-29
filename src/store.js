@@ -9,8 +9,8 @@ import teamReducer from './team/reducer'
 
 const reducer = combineReducers({
 
-     team: teamReducer,
-     teamData: teamsReducer
+     teamData: teamReducer,
+     // teamData: teamsReducer
 })
 
 const store = createStore(

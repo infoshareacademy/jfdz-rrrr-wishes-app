@@ -23,10 +23,9 @@ class App extends Component {
                 <Link to="/team"> Team -test/ </Link>
             </p>
         </div>
-        <p className="App-intro">
-
-        </p>
-
+        <div className="App-intro">
+            {this.props.children}
+        </div>
       </div>
     );
   }
