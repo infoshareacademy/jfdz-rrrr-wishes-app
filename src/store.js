@@ -4,13 +4,16 @@
 import {createStore, combineReducers, applyMiddleware} from 'redux'
 import thunkMiddleware from 'redux-thunk'
 
-import teamsReducer from './teamsReducer'
+
 import teamReducer from './team/reducer'
+import loginReducer from './login/reducer'
 
 const reducer = combineReducers({
 
-     teamData: teamReducer,
-     // teamData: teamsReducer
+    teamData: teamReducer,
+    login: loginReducer,
+    
+     
 })
 
 const store = createStore(

@@ -10,16 +10,21 @@ import {Provider} from 'react-redux'
 import {
   browserHistory,
   Router,
-  Route
+  Route,
+  IndexRoute
 } from 'react-router'
+
 import { fetchTeam } from './team/actionCreators'
 
 import store from './store'
+
+import Login from './login/Login'
 
 ReactDOM.render(
     <Provider store={store}>
         <Router history={browserHistory}>
             <Route path="/" component={App}>
+                <IndexRoute component={Login} />
                 <Route path="/team" component={Team} onEnter={() => store.dispatch(fetchTeam())}/>
             </Route>
         </Router>
