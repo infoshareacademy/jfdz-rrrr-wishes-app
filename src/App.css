@@ -68,3 +68,17 @@ a:hover{
   font-weight: bold;
   font-family: Roboto;
 }
+
+.contentTeam{
+  width: 230px;
+  height: 150px;
+  background-color:#a760ff;
+  color: #ffffff;
+  display: inline-block;
+  padding-top: 50px;
+  margin-right: 20px;
+  margin-top: 20px;
+  border-radius: 50%;
+  border: 2px solid black
+
+}

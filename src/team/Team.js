@@ -11,9 +11,9 @@ const Team = ({ team, isLoading }) => (
     <div>
         <h1>Users</h1>
         {isLoading ? 'Loading users...' : null}
-        <ul>
-            {team.map( team => <li key={team.id}>{team.name}</li>)}
-        </ul>
+        
+           {team.map( team => <div className="contentTeam" key={team.id}>{team.name}</div>)}
+        
     </div>
 )
 
