@@ -19,12 +19,13 @@ import { fetchTeam } from './team/actionCreators'
 import store from './store'
 
 import Login from './login/Login'
-
+import Calendar from './calendar/Calendar'
 ReactDOM.render(
     <Provider store={store}>
         <Router history={browserHistory}>
             <Route path="/" component={App}>
                 <IndexRoute component={Login} />
+                <Route path="/calendar" component={Calendar} />
                 <Route path="/team" component={Team} onEnter={() => store.dispatch(fetchTeam())}/>
             </Route>
         </Router>
