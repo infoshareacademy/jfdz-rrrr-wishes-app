@@ -17,7 +17,7 @@ class App extends Component {
           <h2>Welcome to Wishes-app :)</h2>
             <p>
                 <Link to="/">Login -test/ </Link>
-                <Link to="/Calendar"> Calendar -test/ </Link>
+                <Link to="/calendar"> Calendar -test/ </Link>
                 <Link to="/counter"> Counter -test/ </Link>
                 <Link to="/courses"> Courses -test/ </Link>
                 <Link to="/team"> Team -test/ </Link>

@@ -2,12 +2,16 @@ import React from 'react'
 import {connect} from 'react-redux'
 import BigCalendar from 'react-big-calendar'
 import 'react-big-calendar/lib/css/react-big-calendar.css'
-import events from '.events'
+import events from './events'
 import moment from 'moment'
 
 BigCalendar.setLocalizer(
     BigCalendar.momentLocalizer(moment)
 );
+
+const mapStateToProps = (state) => ({
+    calendar:state.calendar
+})
 
 const Calendar = (props) =>(
     <div>
@@ -26,4 +30,4 @@ const Calendar = (props) =>(
         />
     </div>
 )
-
+export default connect(mapStateToProps)(Calendar)
