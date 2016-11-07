@@ -20,7 +20,7 @@ const Calendar = (props) => (
         <BigCalendar
         selectable
         events={events}
-        timeslots={8}
+        timeslots={3}
         defaultView='week'
         scrollToTime={new Date(1970, 1, 1, 6)}
         defaultDate={new Date(2015, 3, 12)}
