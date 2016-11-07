@@ -5,19 +5,28 @@ import 'react-big-calendar/lib/css/react-big-calendar.css'
 
 import moment from 'moment'
 import events from './events'
-
+import {addEvent, removeEvent} from './actionCreators'
 
 BigCalendar.setLocalizer(
     BigCalendar.momentLocalizer(moment)
 );
 
 const mapStateToProps = (state) => ({
-    calendar:state.calendar
+    calendar:state.calendar,
+    // range:state.calendar.range,
+    // event: state.event.event
 })
+
+const mapDispatchToProps = (dispatch) => ({
+    addEvent: (titel, allDay) => dispatch(addEvent(titel, allDay)),
+    removeEvent: (titel, allDay) => dispatch(removeEvent(titel, allDay))
+})
+
 
 const Calendar = (props) => (
 <div>
         <BigCalendar
+       
         selectable
         events={events}
         timeslots={3}
@@ -32,6 +41,6 @@ const Calendar = (props) => (
         />
 </div>
 )
-export default connect(mapStateToProps)(Calendar)
+export default connect(mapStateToProps, mapDispatchToProps)(Calendar)
 
 
