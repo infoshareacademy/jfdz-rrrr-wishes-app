@@ -24,7 +24,7 @@ const mapDispatchToProps = (dispatch) => ({
 
 
 const Calendar = (props) => (
-<div>
+<div style={{height: 500}}>
         <BigCalendar
        
         selectable
