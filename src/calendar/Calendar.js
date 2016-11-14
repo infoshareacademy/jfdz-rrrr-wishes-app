@@ -18,8 +18,8 @@ const mapStateToProps = (state) => ({
 })
 
 const mapDispatchToProps = (dispatch) => ({
-    addEvent: (titel, allDay) => dispatch(addEvent(titel, allDay)),
-    removeEvent: (titel, allDay) => dispatch(removeEvent(titel, allDay))
+    addEvent: (titel) => dispatch(addEvent(titel)),
+    removeEvent: (titel) => dispatch(removeEvent(titel))
 })
 
 
