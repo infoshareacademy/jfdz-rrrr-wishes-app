@@ -6,9 +6,8 @@ const initialState = {
     [
         {
             'title': 'All Day Event',
-            'allDay': true,
-            'start': new Date(2015, 3, 0),
-            'end': new Date(2015, 3, 0)
+            'start': new Date(),
+            'end': new Date()
         }
     ]
    
@@ -18,9 +17,22 @@ export default (state = initialState, action = {}) =>{
    
     switch (action.type){
         case ADD_EVENT:
-            return {...state, event: state.event};
+            return {
+                // title: ' ',
+                // start: new Date(),
+                // end: new Date(),
+                // lat: point.lat, 
+                // lng: point.lng,
+                // label: point.label,
+                ...state,
+                event: state.event.concat([action.event])
+            }
         case REMOVE_EVENT:
-            return {...state, event: state.event };
+            return {...state, event: state.event.filter(
+                event => 
+                event.title !== action.title || event.title !== action.title
+            )}
+    
         default:
             return state
     }

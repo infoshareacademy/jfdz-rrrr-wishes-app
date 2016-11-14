@@ -1,15 +1,15 @@
 import {ADD_EVENT, REMOVE_EVENT} from './actionTypes'
 
-export function addEvent(title,allDay,start,end){
+export function addEvent(title,start,end){
     return {
         type: ADD_EVENT,
-        event: {title,allDay,start,end}
+        event: {title,start,end}
     }
 }
 
-export function removeEvent(title,allDay,start,end){
+export function removeEvent(title,start,end){
     return {
         type: REMOVE_EVENT,
-        title,allDay,start,end
+        title,start,end
     }
 } 
